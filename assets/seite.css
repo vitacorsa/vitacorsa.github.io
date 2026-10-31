@@ -189,6 +189,10 @@ section { padding: 128px 0 0; scroll-margin-top: 48px; }
 .abschluss .rahmen { display: flex; align-items: center; justify-content: space-between; gap: 48px; }
 .abschluss h2 { margin: 12px 0 0; font-size: clamp(40px, 4.4vw, 68px); font-weight: 600; line-height: 1; letter-spacing: -.015em; }
 .abschluss p { margin: 16px 0 0; font-size: 18px; color: var(--licht-2); }
+.abschluss .spende { margin-top: 10px; font-size: 16px; }
+.abschluss .spende a { color: var(--licht); text-underline-offset: 3px; }
+.abschluss .spende a:hover { color: var(--akzent); }
+a[href^="https://ko-fi.com/"] { white-space: nowrap; }
 .abschluss .knopf-haupt { width: 440px; }
 
 footer { padding: 48px 0 64px; color: var(--licht-3); font-size: 15px; }
@@ -254,7 +258,7 @@ footer nav a:hover { color: var(--licht); }
 .rm-idee p { margin: 0; max-width: 36em; font-size: 18px; color: var(--licht-2); }
 .rm-wege { flex: none; width: 320px; }
 .rm-wege .knopf-zweit:first-child { margin-top: 0; }
-.rm-verweis { display: grid; grid-template-columns: auto auto minmax(0, 1fr) auto; align-items: baseline; gap: 8px 20px; margin-top: 24px; padding: 22px 24px; background: var(--band); color: var(--licht); text-decoration: none; transition: background .25s, color .25s; }
+.rm-verweis { display: grid; grid-template-columns: 72px 200px minmax(0, 1fr) auto; align-items: baseline; gap: 8px 20px; margin-top: 24px; padding: 22px 24px; background: var(--band); color: var(--licht); text-decoration: none; transition: background .25s, color .25s; }
 .rm-verweis b { font-size: 21px; font-weight: 600; }
 .rm-verweis > span:not(.etikett):not(.pfeil) { font-size: 17px; color: var(--licht-2); }
 .rm-verweis .pfeil { font-size: 22px; transition: transform .25s cubic-bezier(.2,.7,.2,1); }
@@ -267,6 +271,7 @@ footer nav a:hover { color: var(--licht); }
   .rm-idee { flex-direction: column; align-items: flex-start; }
   .rm-verweis { grid-template-columns: minmax(0, 1fr) auto; }
   .rm-verweis > span:not(.etikett):not(.pfeil) { grid-column: 1 / -1; grid-row: 3; }
+  .rm-verweis .etikett { grid-column: 1 / -1; }
 }
 @media (max-width: 1100px) {
   .kopf nav { display: none; }

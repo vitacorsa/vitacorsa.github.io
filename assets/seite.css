@@ -210,6 +210,64 @@ footer nav a:hover { color: var(--licht); }
 .textseite-haupt .stand { color: var(--licht-3); font-size: 16px; }
 .textseite-haupt a { color: var(--licht); text-decoration-color: var(--akzent); text-underline-offset: 3px; }
 
+/* Roadmap: Karten je Version, Status wie die Statussymbole der Mod (Punkt = Zustand, Mennige = in Arbeit) */
+.rm-haupt { padding-top: 152px; }
+.rm-haupt .titel h1 { margin: 14px 0 16px; font-weight: 600; font-size: clamp(44px, 4.6vw, 76px); line-height: 1; letter-spacing: -.014em; }
+.rm-haupt .titel .stand { margin-top: 18px; font-size: 16px; color: var(--licht-3); }
+.rm-block { padding-top: 96px; }
+.rm-legende { display: flex; flex-wrap: wrap; gap: 10px 28px; margin: 0; padding: 18px 0 0; list-style: none; border-top: 1px solid var(--naht); }
+.rm-status { display: inline-flex; align-items: center; gap: 8px; font-family: var(--schmal); font-weight: 700; font-size: 14px; letter-spacing: .08em; text-transform: uppercase; color: var(--licht-2); white-space: nowrap; }
+.rm-status i { flex: none; width: 10px; height: 10px; border-radius: 50%; background: var(--licht-3); }
+[data-status="in_arbeit"] .rm-status i, .rm-status[data-status="in_arbeit"] i { background: var(--akzent-hell); box-shadow: 0 0 0 3px rgba(230,104,61,.25); }
+[data-status="fertig"] .rm-status i, .rm-status[data-status="fertig"] i,
+[data-status="erschienen"] .rm-status i { background: var(--plus); }
+[data-status="fertig"] .rm-status, [data-status="erschienen"] .rm-status { color: var(--plus); }
+[data-status="wird_geprueft"] .rm-status i, .rm-status[data-status="wird_geprueft"] i { background: transparent; box-shadow: inset 0 0 0 2px var(--gold); }
+[data-status="angehalten"] .rm-status i { background: transparent; box-shadow: inset 0 0 0 2px var(--licht-3); }
+[data-status="nicht_moeglich"] .rm-status i, .rm-status[data-status="nicht_moeglich"] i,
+[data-status="nicht_geplant"] .rm-status i { background: var(--naht); }
+.rm-fortschritt { height: 4px; margin-top: -1px; background: var(--flaeche-3); }
+.rm-fortschritt i { display: block; height: 100%; background: var(--plus); }
+.rm-satz { margin: 20px 0 28px; max-width: 46em; font-size: 19px; color: var(--licht-2); }
+.rm-karten { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.rm-karte { display: flex; flex-direction: column; padding: 22px 24px 24px; background: var(--band); border-top: 3px solid var(--flaeche-3); }
+.rm-karte[data-status="in_arbeit"] { border-color: var(--akzent); }
+.rm-karte[data-status="fertig"], .rm-karte[data-status="erschienen"] { border-color: var(--plus); }
+.rm-karte[data-status="nicht_moeglich"], .rm-karte[data-status="nicht_geplant"], .rm-karte[data-status="angehalten"] { background: var(--grund); border: 1px solid var(--flaeche-3); border-top-width: 3px; }
+.rm-kopf { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 16px; }
+.rm-kopf .etikett { font-size: 13px; color: var(--licht-3); }
+.rm-karte h3 { margin: 16px 0 8px; font-size: 23px; font-weight: 600; line-height: 1.15; }
+.rm-karte p { margin: 0; font-size: 17px; color: var(--licht-2); }
+.rm-karte .pruefung { position: relative; margin-top: 14px; padding-left: 18px; font-size: 15px; color: var(--licht-3); }
+.rm-karte .pruefung::before { content: ""; position: absolute; left: 0; top: 6px; width: 10px; height: 10px; border-radius: 50%; box-shadow: inset 0 0 0 2px var(--gold); }
+.wunsch { display: inline-block; align-self: flex-start; margin-top: 16px; padding: 4px 9px; background: var(--flaeche-3); font-family: var(--schmal); font-weight: 700; font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--licht); }
+.rm-legende .wunsch { margin-top: 0; }
+.kopfzeile a { font-family: var(--schmal); font-weight: 700; font-size: 14px; letter-spacing: .1em; text-transform: uppercase; color: var(--licht-2); text-decoration: none; }
+.kopfzeile a:hover { color: var(--licht); }
+.rm-erschienen { margin: 0; padding: 0; list-style: none; }
+.rm-erschienen li { display: grid; grid-template-columns: 160px minmax(0, 1fr) auto; gap: 24px; align-items: baseline; padding: 20px 16px; border-bottom: 1px solid var(--flaeche-3); }
+.rm-erschienen b { font-family: var(--schmal); font-weight: 700; font-size: 24px; }
+.rm-erschienen time { font-size: 17px; color: var(--licht-2); }
+.rm-erschienen span { font-size: 15px; color: var(--licht-3); }
+.rm-idee { display: flex; align-items: center; justify-content: space-between; gap: 32px 64px; padding: 48px; background: var(--band); border-top: 3px solid var(--akzent); }
+.rm-idee h2 { margin: 12px 0 10px; font-size: clamp(32px, 3vw, 46px); font-weight: 600; line-height: 1.05; }
+.rm-idee p { margin: 0; max-width: 36em; font-size: 18px; color: var(--licht-2); }
+.rm-wege { flex: none; width: 320px; }
+.rm-wege .knopf-zweit:first-child { margin-top: 0; }
+.rm-verweis { display: grid; grid-template-columns: auto auto minmax(0, 1fr) auto; align-items: baseline; gap: 8px 20px; margin-top: 24px; padding: 22px 24px; background: var(--band); color: var(--licht); text-decoration: none; transition: background .25s, color .25s; }
+.rm-verweis b { font-size: 21px; font-weight: 600; }
+.rm-verweis > span:not(.etikett):not(.pfeil) { font-size: 17px; color: var(--licht-2); }
+.rm-verweis .pfeil { font-size: 22px; transition: transform .25s cubic-bezier(.2,.7,.2,1); }
+.rm-verweis:hover { background: var(--licht); color: var(--tinte); }
+.rm-verweis:hover .etikett, .rm-verweis:hover > span:not(.pfeil) { color: var(--tinte-2); }
+.rm-verweis:hover .pfeil { transform: translateX(4px); }
+
+@media (max-width: 1100px) {
+  .rm-karten { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .rm-idee { flex-direction: column; align-items: flex-start; }
+  .rm-verweis { grid-template-columns: minmax(0, 1fr) auto; }
+  .rm-verweis > span:not(.etikett):not(.pfeil) { grid-column: 1 / -1; grid-row: 3; }
+}
 @media (max-width: 1100px) {
   .kopf nav { display: none; }
   .kopf .rahmen { justify-content: space-between; }
@@ -248,4 +306,13 @@ footer nav a:hover { color: var(--licht); }
   .abschluss .knopf-haupt { width: 100%; }
   footer .rahmen { grid-template-columns: minmax(0, 1fr); }
   .textseite-haupt { padding-top: 112px; }
+  .rm-haupt { padding-top: 112px; }
+  .rm-block { padding-top: 72px; }
+  .rm-karten { grid-template-columns: minmax(0, 1fr); }
+  .rm-legende { gap: 10px 20px; }
+  .rm-satz { font-size: 17px; }
+  .rm-idee { padding: 28px 22px; }
+  .rm-wege { width: 100%; }
+  .rm-erschienen li { grid-template-columns: minmax(0, 1fr) auto; gap: 4px 16px; }
+  .rm-erschienen span { grid-column: 1 / -1; }
 }

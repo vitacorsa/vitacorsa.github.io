@@ -1,0 +1,251 @@
+/* Vita Corsa · Website im Design der Mod-Oberfläche (Grundband): Graphit, Barlow, Mennige als einziger Akzent */
+
+body { background: var(--grund); color: var(--licht); }
+.rahmen { width: min(1600px, 100% - 128px); margin-inline: auto; }
+.etikett { margin: 0; font-family: var(--schmal); font-weight: 700; font-size: 14px; letter-spacing: .1em; text-transform: uppercase; color: var(--licht-2); }
+.springen { position: absolute; left: 16px; top: -60px; z-index: 50; padding: 10px 16px; background: var(--akzent); color: var(--licht); text-decoration: none; font-weight: 600; }
+.springen:focus { top: 12px; }
+
+/* Kopfleiste */
+.kopf { position: fixed; inset: 0 0 auto 0; z-index: 20; transition: background .3s, box-shadow .3s; }
+.kopf.fest { background: rgba(18,20,23,.92); backdrop-filter: blur(12px) saturate(1.2); box-shadow: 0 1px 0 var(--flaeche-3); }
+.kopf .rahmen { display: flex; align-items: center; gap: 48px; height: 68px; }
+.kopf .logo { display: block; line-height: 0; }
+.kopf .logo img { height: 20px; width: auto; }
+.kopf nav { display: flex; align-items: center; gap: 4px; margin-right: auto; }
+.kopf nav a { position: relative; padding: 8px 12px; text-decoration: none; font-size: 18px; font-weight: 500; color: var(--licht-2); transition: color .2s; }
+.kopf nav a::after { content: ""; position: absolute; left: 12px; right: 12px; bottom: 0; height: 2px; background: var(--akzent); transform: scaleX(0); transition: transform .3s cubic-bezier(.2,.7,.2,1); }
+.kopf nav a:hover { color: var(--licht); }
+.kopf nav a[aria-current] { color: var(--licht); }
+.kopf nav a[aria-current]::after { transform: none; }
+.kopf .laden { display: inline-flex; align-items: center; gap: 10px; height: 46px; padding: 0 20px; background: var(--akzent); color: var(--licht); font-weight: 600; font-size: 17px; text-decoration: none; transition: background .2s; }
+.kopf .laden:hover { background: var(--akzent-hell); }
+.kopf .laden small { font-weight: 500; font-size: 15px; opacity: .85; }
+
+/* Bühne mit Rennclip */
+.buehne { position: relative; min-height: min(100svh, 1100px); display: flex; align-items: center; overflow: hidden; background: var(--grund); }
+.buehne .bild, .buehne video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 70% 50%; }
+.buehne::before { content: ""; position: absolute; inset: 0; z-index: 1; background: linear-gradient(90deg, rgba(18,20,23,.96) 0%, rgba(18,20,23,.86) 30%, rgba(18,20,23,.22) 58%, rgba(18,20,23,0) 78%), linear-gradient(0deg, var(--grund) 0%, rgba(18,20,23,0) 24%), linear-gradient(180deg, rgba(18,20,23,.7) 0%, rgba(18,20,23,0) 14%); }
+.buehne .rahmen { position: relative; z-index: 2; padding: 128px 0 112px; }
+.buehne .text { max-width: 720px; }
+.buehne h1 { margin: 16px 0 24px; font-weight: 600; font-size: clamp(48px, 5.4vw, 92px); line-height: .98; letter-spacing: -.012em; }
+.buehne .unter { margin: 0 0 36px; max-width: 28em; font-size: 21px; color: var(--licht-2); }
+.werte { display: flex; flex-wrap: wrap; gap: 20px 44px; margin: 0 0 40px; }
+.werte b { display: block; font-family: var(--schmal); font-weight: 700; font-size: 48px; line-height: 1; font-variant-numeric: tabular-nums; }
+.werte span { font-size: 16px; color: var(--licht-2); }
+.knopf-haupt { position: relative; display: flex; align-items: center; gap: 24px; width: 100%; max-width: 480px; height: 68px; padding: 0 24px; background: var(--akzent); color: var(--licht); text-decoration: none; font-size: 24px; font-weight: 600; overflow: hidden; transition: background .2s; }
+.knopf-haupt small { margin-left: auto; font-size: 16px; font-weight: 500; }
+.knopf-haupt .pfeil { transition: transform .25s cubic-bezier(.2,.7,.2,1); }
+.knopf-haupt::before { content: ""; position: absolute; inset: 0; background: linear-gradient(100deg, transparent 30%, rgba(255,255,255,.18) 50%, transparent 70%); transform: translateX(-100%); }
+.knopf-haupt:hover { background: var(--akzent-hell); }
+.knopf-haupt:hover::before { transform: translateX(100%); transition: transform .8s ease; }
+.knopf-haupt:hover .pfeil { transform: translateY(3px); }
+.knopf-zweit { display: flex; align-items: center; width: 100%; max-width: 480px; height: 56px; margin-top: 8px; padding: 0 24px; background: var(--flaeche-3); color: var(--licht); text-decoration: none; font-size: 20px; font-weight: 600; transition: background .2s; }
+.knopf-zweit:hover { background: var(--naht); }
+.hinweis { margin: 20px 0 0; max-width: 480px; font-size: 15px; color: var(--licht-3); }
+.buehne .steuer { position: absolute; z-index: 3; right: 64px; bottom: 28px; }
+
+/* Abschnitte */
+section { padding: 128px 0 0; scroll-margin-top: 48px; }
+.kopfzeile { display: flex; align-items: baseline; justify-content: space-between; gap: 24px; padding-bottom: 14px; border-bottom: 1px solid var(--naht); }
+.kopfzeile h2, .kopfzeile .etikett { margin: 0; font-family: var(--schmal); font-weight: 700; font-size: 14px; letter-spacing: .1em; text-transform: uppercase; color: var(--licht-2); }
+.kopfzeile span { font-family: var(--schmal); font-weight: 700; font-size: 14px; letter-spacing: .1em; text-transform: uppercase; color: var(--licht-3); }
+.titel { margin: 0 0 48px; max-width: 980px; }
+.titel h2 { margin: 14px 0 16px; font-weight: 600; font-size: clamp(36px, 3.6vw, 56px); line-height: 1.04; letter-spacing: -.012em; }
+.titel p { margin: 0; max-width: 46em; font-size: 20px; color: var(--licht-2); }
+
+/* Lizenzweg wie die Lizenzleiste im Spiel */
+.weg { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; list-style: none; margin: 0; padding: 0; }
+.weg li { padding: 20px 24px 26px; background: var(--band); border-top: 3px solid var(--naht); }
+.weg li:first-child { border-color: var(--akzent); }
+.weg .stufe { display: flex; align-items: center; gap: 12px; }
+.weg .stufe b { display: grid; place-items: center; width: 34px; height: 34px; background: var(--flaeche-3); font-family: var(--schmal); font-weight: 700; font-size: 18px; }
+.weg li:first-child .stufe b { background: var(--akzent); }
+.weg h3 { margin: 16px 0 6px; font-size: 26px; font-weight: 600; }
+.weg p { margin: 0; font-size: 17px; color: var(--licht-2); }
+
+/* Kapitel: Bild und Text im Wechsel, Text als Tafel wie im Spiel */
+.kapitel { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 56px; align-items: center; }
+.kapitel + .kapitel { margin-top: 112px; }
+.kapitel.links { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); }
+.kapitel.links .bildseite { order: 2; }
+.bildseite { position: relative; margin: 0; }
+.bildseite .rahmen-bild { position: relative; overflow: hidden; background: var(--band); }
+.bildseite img { width: 100%; height: auto; transition: transform .8s cubic-bezier(.2,.7,.2,1); }
+.bildseite:hover img { transform: scale(1.025); }
+.bildseite::before { content: ""; position: absolute; z-index: 1; left: -12px; top: 0; bottom: 0; width: 4px; background: var(--akzent); }
+.kapitel.links .bildseite::before { left: auto; right: -12px; }
+.js .bildseite .rahmen-bild { clip-path: inset(0 100% 0 0); transition: clip-path 1.2s cubic-bezier(.7,0,.2,1); }
+.js .kapitel.links .bildseite .rahmen-bild { clip-path: inset(0 0 0 100%); }
+.js .kapitel.sichtbar .bildseite .rahmen-bild { clip-path: inset(0 0 0 0); }
+.bildseite figcaption { margin-top: 12px; font-size: 15px; color: var(--licht-3); }
+.textseite h3 { margin: 14px 0 14px; font-size: clamp(30px, 2.6vw, 42px); font-weight: 600; line-height: 1.08; letter-spacing: -.01em; }
+.textseite > p { margin: 0 0 24px; font-size: 19px; color: var(--licht-2); }
+.punkte { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--flaeche-3); }
+.punkte li { position: relative; padding: 13px 0 13px 28px; border-bottom: 1px solid var(--flaeche-3); font-size: 17px; color: var(--licht-2); }
+.punkte li::before { content: ""; position: absolute; left: 4px; top: 22px; width: 8px; height: 2px; background: var(--akzent); }
+.punkte b { color: var(--licht); font-weight: 600; }
+
+/* Kachelraster für weitere Merkmale */
+.kacheln { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.kachel { position: relative; padding: 28px 28px 30px; background: var(--band); transition: background .25s, color .25s; }
+.kachel::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 4px; background: var(--akzent); transform: scaleY(0); transform-origin: 50% 0; transition: transform .3s cubic-bezier(.2,.7,.2,1); }
+.kachel:hover { background: var(--licht); color: var(--tinte); }
+.kachel:hover::before { transform: none; }
+.kachel:hover p, .kachel:hover .etikett { color: var(--tinte-2); }
+.kachel .symbol { width: 32px; height: 32px; margin-bottom: 18px; color: var(--akzent-hell); }
+.kachel:hover .symbol { color: var(--akzent); }
+.kachel h3 { margin: 10px 0 8px; font-size: 22px; font-weight: 600; }
+.kachel p { margin: 0; font-size: 17px; color: var(--licht-2); }
+
+/* Mod-Unterstützung: hervorgehobene Tafel */
+.modtafel { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 0; background: var(--band); }
+.modtafel .links { padding: 48px; border-right: 1px solid var(--flaeche-3); }
+.modtafel .links h3 { margin: 14px 0 16px; font-size: clamp(30px, 2.6vw, 42px); font-weight: 600; line-height: 1.08; }
+.modtafel .links p { margin: 0 0 16px; font-size: 18px; color: var(--licht-2); }
+.modtafel .rechts { padding: 40px 48px 48px; }
+.schalter { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 18px 0; border-bottom: 1px solid var(--flaeche-3); }
+.schalter b { display: block; font-size: 19px; font-weight: 600; }
+.schalter span { display: block; margin-top: 2px; font-size: 16px; color: var(--licht-2); }
+.schalter .aus { flex: none; position: relative; width: 52px; height: 28px; border-radius: 14px; background: var(--flaeche-3); }
+.schalter .aus::after { content: ""; position: absolute; left: 4px; top: 4px; width: 20px; height: 20px; border-radius: 50%; background: var(--licht-3); }
+.cups { display: flex; flex-wrap: wrap; gap: 8px; margin: 22px 0 10px; padding: 0; list-style: none; }
+.cups li { padding: 6px 10px; background: var(--flaeche-3); font-family: var(--schmal); font-weight: 700; font-size: 15px; letter-spacing: .04em; }
+.modtafel small { display: block; font-size: 15px; color: var(--licht-3); }
+
+/* Bildreihe */
+.bilder { display: grid; grid-auto-flow: column; grid-auto-columns: calc((100% - 48px) / 4.35); gap: 12px; margin-top: 24px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; }
+.bilder::-webkit-scrollbar { display: none; }
+.bilder figure { margin: 0; background: var(--flaeche-2); scroll-snap-align: start; transition: background .25s, color .25s; }
+.bilder .rahmen-bild { overflow: hidden; }
+.bilder img { width: 100%; aspect-ratio: 16/9; object-fit: cover; transition: transform .6s cubic-bezier(.2,.7,.2,1); }
+.bilder figcaption { padding: 14px 16px 16px; }
+.bilder figcaption small { display: block; font-family: var(--schmal); font-weight: 700; font-size: 13px; letter-spacing: .1em; text-transform: uppercase; color: var(--licht-3); transition: color .25s; }
+.bilder figcaption b { font-weight: 600; font-size: 19px; }
+.bilder figure:hover, .bilder figure:focus-within { background: var(--licht); color: var(--tinte); }
+.bilder figure:hover small, .bilder figure:focus-within small { color: var(--tinte-3); }
+.bilder figure:hover img { transform: scale(1.04); }
+.blaettern { display: flex; gap: 8px; }
+.blaettern button { width: 40px; height: 40px; border: 0; background: var(--flaeche-3); color: var(--licht); font-size: 18px; cursor: pointer; transition: background .2s; }
+.blaettern button:hover { background: var(--akzent); }
+
+/* Zwei Spalten: Liste und Seitentafeln */
+.zwei { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: 64px; }
+.tafel { padding: 24px; background: var(--band); }
+.tafel + .tafel { margin-top: 16px; }
+.tafel h3 { margin: 0 0 12px; font-family: var(--schmal); font-weight: 700; font-size: 14px; letter-spacing: .1em; text-transform: uppercase; color: var(--licht-2); }
+.tafel p { margin: 0 0 16px; font-size: 16px; color: var(--licht-2); }
+.tafel p:last-child { margin: 0; }
+.tafel dl { margin: 0; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 10px 20px; font-size: 16px; }
+.tafel dt { color: var(--licht-3); }
+.tafel dd { margin: 0; }
+.tafel dl.gestapelt { grid-template-columns: minmax(0, 1fr); gap: 2px; }
+.tafel dl.gestapelt dd { margin-bottom: 10px; }
+.tafel .pruef { font-size: 13px; color: var(--licht-2); }
+
+/* Einbau: Reiter Install / Update / Uninstall */
+.reiter { display: flex; gap: 4px; border-bottom: 1px solid var(--naht); }
+.reiter button { position: relative; padding: 14px 18px; border: 0; background: none; color: var(--licht-2); font-size: 18px; font-weight: 500; cursor: pointer; }
+.reiter button::after { content: ""; position: absolute; left: 18px; right: 18px; bottom: -1px; height: 2px; background: var(--akzent); transform: scaleX(0); transition: transform .3s cubic-bezier(.2,.7,.2,1); }
+.reiter button:hover { color: var(--licht); }
+.reiter button[aria-selected="true"] { color: var(--licht); font-weight: 600; }
+.reiter button[aria-selected="true"]::after { transform: none; }
+.reiterinhalt[hidden] { display: none; }
+.reiterinhalt { animation: einblenden .4s cubic-bezier(.2,.7,.2,1) both; animation-delay: 0s; }
+.schritte { counter-reset: s; list-style: none; margin: 0; padding: 0; }
+.schritte li { counter-increment: s; position: relative; padding: 18px 16px 18px 68px; border-bottom: 1px solid var(--flaeche-3); font-size: 18px; }
+.schritte li::before { content: counter(s); position: absolute; left: 16px; top: 16px; width: 32px; height: 32px; display: grid; place-items: center; background: var(--flaeche-3); font-family: var(--schmal); font-weight: 700; font-size: 16px; transition: background .3s; }
+.schritte li:hover::before { background: var(--akzent); }
+.schritte small { display: block; margin-top: 4px; font-size: 16px; color: var(--licht-2); }
+.zeile { margin-top: 12px; padding: 12px 14px; background: var(--grund); border: 1px solid var(--naht); font-size: 14px; color: var(--licht); overflow-x: auto; white-space: nowrap; }
+
+/* Fragen */
+.fragen { border-top: 1px solid var(--naht); }
+.fragen details { border-bottom: 1px solid var(--flaeche-3); }
+.fragen summary { position: relative; display: block; padding: 22px 56px 22px 16px; font-size: 20px; font-weight: 600; cursor: pointer; list-style: none; transition: background .2s, color .2s; }
+.fragen summary::-webkit-details-marker { display: none; }
+.fragen summary::after { content: ""; position: absolute; right: 22px; top: 50%; width: 12px; height: 12px; margin-top: -8px; border-right: 2px solid var(--licht-2); border-bottom: 2px solid var(--licht-2); transform: rotate(45deg); transition: transform .3s cubic-bezier(.2,.7,.2,1); }
+.fragen details[open] summary::after { transform: rotate(225deg); margin-top: -2px; }
+.fragen summary:hover { background: var(--band); }
+.fragen details > div { padding: 0 56px 24px 16px; font-size: 18px; color: var(--licht-2); }
+.fragen details > div p { margin: 0 0 10px; }
+@supports (interpolate-size: allow-keywords) {
+  .fragen { interpolate-size: allow-keywords; }
+  .fragen details::details-content { height: 0; overflow: hidden; transition: height .35s cubic-bezier(.2,.7,.2,1), content-visibility .35s allow-discrete; }
+  .fragen details[open]::details-content { height: auto; }
+}
+
+/* Versionen */
+.version { display: grid; grid-template-columns: 160px minmax(0, 1fr) auto; gap: 24px; padding: 22px 16px; border-bottom: 1px solid var(--flaeche-3); }
+.version b { font-family: var(--schmal); font-weight: 700; font-size: 24px; }
+.version time { display: block; font-size: 15px; color: var(--licht-3); }
+.version ul { margin: 0; padding-left: 18px; color: var(--licht-2); font-size: 17px; }
+.version li + li { margin-top: 6px; }
+.version .laden-klein { align-self: start; display: inline-flex; align-items: center; height: 40px; padding: 0 16px; background: var(--flaeche-3); color: var(--licht); text-decoration: none; font-size: 15px; font-weight: 600; white-space: nowrap; transition: background .2s; }
+.version .laden-klein:hover { background: var(--akzent); }
+
+/* Abschluss mit zweitem Downloadknopf */
+.abschluss { margin-top: 144px; padding: 96px 0; background: var(--band); border-top: 3px solid var(--akzent); }
+.abschluss .rahmen { display: flex; align-items: center; justify-content: space-between; gap: 48px; }
+.abschluss h2 { margin: 12px 0 0; font-size: clamp(40px, 4.4vw, 68px); font-weight: 600; line-height: 1; letter-spacing: -.015em; }
+.abschluss p { margin: 16px 0 0; font-size: 18px; color: var(--licht-2); }
+.abschluss .knopf-haupt { width: 440px; }
+
+footer { padding: 48px 0 64px; color: var(--licht-3); font-size: 15px; }
+footer .rahmen { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 24px 64px; }
+footer .logo img { height: 20px; width: auto; margin-bottom: 16px; }
+footer p { margin: 0; max-width: 760px; }
+footer nav { display: flex; flex-wrap: wrap; gap: 12px 28px; }
+footer nav a { color: var(--licht-2); text-decoration: none; }
+footer nav a:hover { color: var(--licht); }
+
+/* Textseiten (Terms, 404) */
+.textseite-haupt { padding: 152px 0 64px; }
+.textseite-haupt .rahmen { max-width: 880px; }
+.textseite-haupt h1 { margin: 14px 0 24px; font-size: clamp(40px, 4vw, 64px); font-weight: 600; line-height: 1.02; }
+.textseite-haupt h2 { margin: 48px 0 12px; font-size: 26px; font-weight: 600; }
+.textseite-haupt p, .textseite-haupt li { font-size: 18px; color: var(--licht-2); }
+.textseite-haupt ul { padding-left: 22px; }
+.textseite-haupt li + li { margin-top: 6px; }
+.textseite-haupt .stand { color: var(--licht-3); font-size: 16px; }
+.textseite-haupt a { color: var(--licht); text-decoration-color: var(--akzent); text-underline-offset: 3px; }
+
+@media (max-width: 1100px) {
+  .kopf nav { display: none; }
+  .kopf .rahmen { justify-content: space-between; }
+  .weg { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .kapitel, .kapitel.links { grid-template-columns: minmax(0, 1fr); gap: 32px; }
+  .kapitel.links .bildseite { order: 0; }
+  .kacheln { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .modtafel { grid-template-columns: minmax(0, 1fr); }
+  .modtafel .links { border-right: 0; border-bottom: 1px solid var(--flaeche-3); }
+  .bilder { grid-auto-columns: calc((100% - 12px) / 2.2); }
+  .zwei { grid-template-columns: minmax(0, 1fr); gap: 40px; }
+  .abschluss .rahmen { flex-direction: column; align-items: flex-start; }
+  .buehne .steuer { right: 32px; }
+}
+@media (max-width: 640px) {
+  .rahmen { width: calc(100% - 32px); }
+  .kopf .laden small { display: none; }
+  .buehne { align-items: flex-end; }
+  .buehne::before { background: linear-gradient(0deg, var(--grund) 34%, rgba(18,20,23,.55) 62%, rgba(18,20,23,.2) 100%); }
+  .buehne .rahmen { padding: 104px 0 72px; }
+  .buehne .steuer { right: 16px; bottom: 16px; }
+  .werte { gap: 16px 28px; }
+  .werte b { font-size: 36px; }
+  .knopf-haupt { font-size: 20px; }
+  section { padding-top: 88px; }
+  .weg, .kacheln { grid-template-columns: minmax(0, 1fr); }
+  .kapitel + .kapitel { margin-top: 72px; }
+  .bildseite::before { display: none; }
+  .modtafel .links, .modtafel .rechts { padding: 28px 22px; }
+  .bilder { grid-auto-columns: 84%; }
+  .blaettern { display: none; }
+  .version { grid-template-columns: minmax(0, 1fr); gap: 10px; }
+  .fragen summary { font-size: 18px; padding-right: 48px; }
+  .fragen details > div { padding-right: 16px; }
+  .abschluss { margin-top: 96px; padding: 64px 0; }
+  .abschluss .knopf-haupt { width: 100%; }
+  footer .rahmen { grid-template-columns: minmax(0, 1fr); }
+  .textseite-haupt { padding-top: 112px; }
+}

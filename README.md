@@ -13,4 +13,4 @@ Latest version: **0.2.0** (3 November 2026) · [Download VitaCorsa-0.2.0.zip](ht
 
 This repository hosts the Vita Corsa website and its downloads. The mod's source code is not public.
 
-Vita Corsa is a free, unofficial fan mod. It is not made, endorsed or supported by Kunos Simulazioni, 505 Games / Digital Bros or any car manufacturer, team or circuit. See the [terms and licences](https://vitacorsa.github.io/terms.html).
+Vita Corsa is a free, unofficial fan mod. It is not made, endorsed or supported by Kunos Simulazioni, 505 Games / Digital Bros or any car manufacturer, team or circuit. Car, manufacturer and circuit names only identify the game's content; all trademarks belong to their respective owners. See the [terms and licences](https://vitacorsa.github.io/terms.html).

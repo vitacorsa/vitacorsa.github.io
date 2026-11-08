@@ -6,7 +6,7 @@ Vita Corsa is a free, unofficial career mod for Assetto Corsa EVO. Players start
 
 MEDIUM, ABOUT 100 WORDS
 
-Vita Corsa adds a full career mode to Assetto Corsa EVO, opened from its own tile in the game's main menu. Players start with a national licence and a small budget, buy their first car at the dealer and race in 33 cups across four licences. 32 timed licence tests pay for every medal. A regular cast of 112 fictional drivers in 12 teams brings rivalries that carry over from cup to cup, and season sponsors, invitations and works contracts follow good results. Every race runs in the game itself, with its physics, AI and weather. Vita Corsa is free and runs on Windows.
+Vita Corsa adds a full career mode to Assetto Corsa EVO, opened from its own tile in the game's main menu. Players start with a national licence and a small budget, buy their first car at the dealer and race in 33 cups across four licences. 32 timed licence tests pay for every medal. A regular cast of 112 fictional drivers in 30 teams brings rivalries that carry over from cup to cup, and season sponsors, invitations and works contracts follow good results. Every race runs in the game itself, with its physics, AI and weather. Vita Corsa is free and runs on Windows.
 
 LONG, ABOUT 250 WORDS
 
@@ -16,7 +16,7 @@ Every licence starts with timed tests on real circuits. 32 tests pay prize money
 
 33 cups with 143 races run as real weekends: optional practice, a short qualifying that sets the grid, and a field that follows the player's pace. Race formats such as a reversed grid, success ballast, rain and dusk races keep a season varied, and a title calculator shows what is needed before the final.
 
-A regular cast of 112 fictional drivers in 12 teams is the same in every career. Drivers have traits, form and rivalries; rivals remember close fights and move up the ladder with the player.
+A regular cast of 112 fictional drivers in 30 teams is the same in every career. Drivers have traits, form and rivalries; rivals remember close fights and move up the ladder with the player.
 
 Dealers sell the 71 cars of the game at researched market prices in 7 currencies. A garage with workshop, season sponsors, 36 cup sponsor brands, invitations and works contracts complete the economy, which stays separate from the game's own. Installed car mods can join 15 cups if the player switches them on.
 
@@ -30,11 +30,11 @@ Game: Assetto Corsa EVO (Steam), tested with AC EVO 0.9.1
 Platform: Windows
 Price: Free
 Languages: English and German
-Current version: 0.2.0, 3 November 2026
+Current version: 0.3.0, 8 November 2026
 First release: 0.1.0, 30 October 2026
 Licences and tests: 4 licences, 32 licence tests
 Cups and races: 33 cups, 143 races on 33 layouts
-Drivers and teams: 112 fictional drivers in 12 teams
+Drivers and teams: 112 fictional drivers in 30 teams
 Cars: 71 cars of the game from 26 makers
 Website: https://vitacorsa.github.io
 

@@ -30,7 +30,7 @@ Game: Assetto Corsa EVO (Steam), tested with AC EVO 0.9.1
 Platform: Windows
 Price: Free
 Languages: English and German
-Current version: 0.3.0, 8 November 2026
+Current version: 0.3.5, 9 November 2026
 First release: 0.1.0, 30 October 2026
 Licences and tests: 4 licences, 32 licence tests
 Cups and races: 33 cups, 143 races on 33 layouts

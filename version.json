@@ -1,13 +1,10 @@
 {
- "version": "0.4.0",
+ "version": "0.4.1",
  "changes": [
-  "Milestones: Your driver file keeps the special moments of your career: your first pole, your first win in the rain, your hundredth start, a win from tenth on the grid.",
-  "Career goals and a legacy: Pick three long-term goals, such as a title in every licence or making your team the best in the paddock, and see them judged in your yearbook.",
-  "Challenge levels and iron mode: Before a cup you can make it harder on purpose: stronger opponents, full damage, a start from the back, more rain or a double entry fee.",
-  "Drivers with a story: The regular drivers earn traits from what happens in your races, like a rain specialist after strong races in the wet or a slump after a run of weak cups.",
-  "Promises to team and sponsor: When a team or a season sponsor signs you, choose what you promise: a safe target, a normal one or an ambitious one with a bigger bonus.",
-  "Small things that help: Bookmark up to five cars at the dealer and see what you are still short of.",
-  "Weekly challenge: Every week one fixed challenge, the same for everyone: same circuit, same car, same conditions.",
-  "A lighter career: A Basic career for players who just want to race: licences, cups, prize money, dealers and your garage."
+  "Setup next to other mod tools: Setup no longer stops when another tool has added cars or tracks to the game's own data.",
+  "Dusk races at the right time: At Spa a dusk race started in the dark, because the game keeps its own clock for some circuits.",
+  "Setup finds the right game folder: With several Steam libraries Setup could pick an old copy of the game.",
+  "New version notice: When a new version is out, the game's main menu tells you, the Vita Corsa tile shows it and the settings list it next to your own version.",
+  "Latest changes in the game: The list of changes is now in the game: open it from the menu or from the version line in the settings."
  ]
 }

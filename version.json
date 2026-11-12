@@ -1,10 +1,13 @@
 {
- "version": "0.4.1",
+ "version": "0.4.2",
  "changes": [
-  "Setup next to other mod tools: Setup no longer stops when another tool has added cars or tracks to the game's own data.",
-  "Dusk races at the right time: At Spa a dusk race started in the dark, because the game keeps its own clock for some circuits.",
-  "Setup finds the right game folder: With several Steam libraries Setup could pick an old copy of the game.",
-  "New version notice: When a new version is out, the game's main menu tells you, the Vita Corsa tile shows it and the settings list it next to your own version.",
-  "Latest changes in the game: The list of changes is now in the game: open it from the menu or from the version line in the settings."
+  "Made for the mouse: Every menu gets a full pass with the mouse.",
+  "Tidier on triple screens: Notices now appear on the centre screen instead of far left, and the header band runs across all three screens, also behind the track photos.",
+  "Small wishes: Choose the season length when you start a career.",
+  "Qualifying and your grid slot: The game only uses qualifying for the grid when at least half the field has set a valid lap.",
+  "Track book says where a record was set: Every record now shows whether it was set in a race or in qualifying, and when.",
+  "Career path labels: On the career path two labels above the first step could overlap.",
+  "Licences page opens at your level: With a medal in every test of your licence, the Licences page could open at the Pro level.",
+  "Start lights after pausing: After opening the pause menu in a licence test, the start lights could stay on screen without lighting up."
  ]
 }

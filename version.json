@@ -1,13 +1,6 @@
 {
- "version": "0.4.2",
+ "version": "0.4.3",
  "changes": [
-  "Made for the mouse: Every menu gets a full pass with the mouse.",
-  "Tidier on triple screens: Notices now appear on the centre screen instead of far left, and the header band runs across all three screens, also behind the track photos.",
-  "Small wishes: Choose the season length when you start a career.",
-  "Qualifying and your grid slot: The game only uses qualifying for the grid when at least half the field has set a valid lap.",
-  "Track book says where a record was set: Every record now shows whether it was set in a race or in qualifying, and when.",
-  "Career path labels: On the career path two labels above the first step could overlap.",
-  "Licences page opens at your level: With a medal in every test of your licence, the Licences page could open at the Pro level.",
-  "Start lights after pausing: After opening the pause menu in a licence test, the start lights could stay on screen without lighting up."
+  "Italian interface: Vita Corsa in Italian as a third language next to English and German: every menu, message and hint, plus Setup and the included notes."
  ]
 }

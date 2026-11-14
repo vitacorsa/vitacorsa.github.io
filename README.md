@@ -4,12 +4,12 @@ Free, unofficial career mode for Assetto Corsa EVO: licences and licence tests, 
 
 **Website and download: https://vitacorsa.github.io**
 
-Latest version: **0.4.2** (12 November 2026) · [Download VitaCorsa-0.4.2.zip](https://github.com/vitacorsa/vitacorsa.github.io/releases/download/v0.4.2/VitaCorsa-0.4.2.zip) · [All releases](https://github.com/vitacorsa/vitacorsa.github.io/releases)
+Latest version: **0.4.3** (14 November 2026) · [Download VitaCorsa-0.4.3.zip](https://github.com/vitacorsa/vitacorsa.github.io/releases/download/v0.4.3/VitaCorsa-0.4.3.zip) · [All releases](https://github.com/vitacorsa/vitacorsa.github.io/releases)
 
 | File | SHA-256 |
 |---|---|
-| VitaCorsa-0.4.2.zip | `e7e235cb3bdd498ca0e55d15f92a5cb132bafc9d84de7a9d73e7173f3ddd827f` |
-| VitaCorsa-Setup-0.4.2.exe (inside the ZIP) | `7f962243ec5d4f7a145037dcead223c47711bedd797ad7e3b9ec0067f721b079` |
+| VitaCorsa-0.4.3.zip | `4cb55bbf12de9520eae1b875375853473e1af5636f7984999f8d193b26249214` |
+| VitaCorsa-Setup-0.4.3.exe (inside the ZIP) | `131cc21f4793f0648ae9a606a2e063169379ee52e29da54d31c9ddce98dbcbb0` |
 
 This repository hosts the Vita Corsa website and its downloads. The mod's source code is not public.
 

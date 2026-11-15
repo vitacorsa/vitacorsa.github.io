@@ -1,6 +1,12 @@
 {
- "version": "0.4.3",
+ "version": "0.4.4",
  "changes": [
-  "Italian interface: Vita Corsa in Italian as a third language next to English and German: every menu, message and hint, plus Setup and the included notes."
+  "Flying lap from just before the line: In the time trials over a whole lap you now start about 200 m before the line and cross the start gate at speed, then drive one full lap.",
+  "Cup prizes at a glance: The cup page shows the title bonus and the prizes for second and third place and per race win, also after the cup.",
+  "Pressure plaque on the trophy: A cup won under pressure now shows its bronze, silver or gold plaque on the trophy, in the title moment, the standings and your trophy cabinet.",
+  "Fairer cup fields: Endurance Classics is now GT2 only and Nordschleife Masters GT3 only, and no field takes cars far faster or slower than yours.",
+  "New gold times in the licence tests: Gold times for thirteen licence tests follow the times a tester reached over many attempts.",
+  "Your cars in the game's own garage: Cars you sold, or from deleted saves and ended careers, no longer stay in the game's own My Cars list.",
+  "Small fixes: Scroll bars show at once, the workshop arrows sit beside the parts like at the dealer, the 911 GT3 Cup comes in a livery you can repaint, and the new version notice checks at every game start."
  ]
 }

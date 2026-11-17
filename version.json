@@ -1,7 +1,6 @@
 {
- "version": "0.5.0",
+ "version": "0.5.1",
  "changes": [
-  "More for mod cars: Mod cars with several specs can be upgraded in the workshop and painted in the game's paint shop, and you always race the spec you bought.",
-  "Your mod cars at the start of a career: A new step lists every mod car you have installed."
+  "Setup with many mods: Setup no longer stops after about five minutes when you have many car or track mods installed."
  ]
 }

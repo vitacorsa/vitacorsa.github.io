@@ -1,6 +1,6 @@
 {
- "version": "0.5.1",
+ "version": "0.5.2",
  "changes": [
-  "Setup with many mods: Setup no longer stops after about five minutes when you have many car or track mods installed."
+  "Take every suggestion at once: When you add many mod cars at the start of a career, one button takes the suggested cup for every car instead of confirming them one by one."
  ]
 }

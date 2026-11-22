@@ -1,6 +1,11 @@
 {
- "version": "0.5.2",
+ "version": "0.6.0",
  "changes": [
-  "Take every suggestion at once: When you add many mod cars at the start of a career, one button takes the suggested cup for every car instead of confirming them one by one."
+  "Cup standings during the race: During the race a small panel shows the cup standings as they would be if the race ended now: the leader, the drivers just ahead of and behind you, and your points.",
+  "Your race length: Choose your race length from 8 to 90 minutes and a free practice of 15, 30 or 60 minutes before qualifying.",
+  "Skip circuits you don't like: Pick circuits you never want to race on.",
+  "Multi-class races: Two new multi-class cups: GT Endurance with GT3 and GT4 cars at International level and Pro Endurance with prototypes and GT3 cars at Pro level.",
+  "Race engineer report",
+  "Fixes from your test reports"
  ]
 }

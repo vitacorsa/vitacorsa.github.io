@@ -14,7 +14,7 @@ Vita Corsa is a free, unofficial career mod for Assetto Corsa EVO. It opens from
 
 Every licence starts with timed tests on real circuits. 32 tests pay prize money for bronze, silver and gold, and gold in every test of a licence earns a bonus car. The next licence asks for medals, clean races and cup results.
 
-35 cups with 153 races run as real weekends: optional practice, a short qualifying that sets the grid, and a field that follows the player's pace. Race formats such as a reversed grid, success ballast, rain and dusk races keep a season varied, and a title calculator shows what is needed before the final.
+35 cups with 153 races run as real weekends: optional free practice, a short qualifying that sets the grid, a race length the player chooses from 8 to 90 minutes, and a field that follows the player's pace. Two multi-class cups put GT3 and GT4 cars, or prototypes and GT3 cars, on one grid. Race formats such as a reversed grid, success ballast, rain and dusk races keep a season varied, and a title calculator shows what is needed before the final.
 
 A regular cast of 112 fictional drivers in 30 teams is the same in every career. Drivers have traits, form and rivalries; rivals remember close fights and move up the ladder with the player.
 

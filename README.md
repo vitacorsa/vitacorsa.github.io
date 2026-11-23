@@ -4,7 +4,7 @@ Free, unofficial career mode for Assetto Corsa EVO: licences and licence tests, 
 
 **Website and download: https://vitacorsa.github.io**
 
-Latest version: **0.6.1** (22 November 2026) · [Download VitaCorsa-0.6.1.zip](https://github.com/vitacorsa/vitacorsa.github.io/releases/download/v0.6.1/VitaCorsa-0.6.1.zip) · [All releases](https://github.com/vitacorsa/vitacorsa.github.io/releases)
+Latest version: **0.6.1** (23 November 2026) · [Download VitaCorsa-0.6.1.zip](https://github.com/vitacorsa/vitacorsa.github.io/releases/download/v0.6.1/VitaCorsa-0.6.1.zip) · [All releases](https://github.com/vitacorsa/vitacorsa.github.io/releases)
 
 | File | SHA-256 |
 |---|---|

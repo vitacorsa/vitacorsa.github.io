@@ -1,6 +1,7 @@
 {
- "version": "0.6.1",
+ "version": "0.7.0",
  "changes": [
-  "Cup descriptions: GT Endurance and Pro Endurance show their description on the cup page instead of a placeholder."
+  "Five new road car cups",
+  "International licence: new medal times: Medal times in the International licence tests follow a tester's times: gold takes a few attempts, silver is one or two seconds behind and bronze leaves plenty of room for pad drivers."
  ]
 }
